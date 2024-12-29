@@ -1,0 +1,143 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ESTILOS GENERALES */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  /* CONTENEDOR PRINCIPAL */
+  .container {
+    max-width: 700px;
+    margin: 2rem auto;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* CABECERA */
+  header {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    color: #666;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* DESCRIPCIÓN INTRODUCTORIA */
+  .intro {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* FIELDSETS Y LEGEND */
+  fieldset {
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    padding: 1rem 1.5rem 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  legend {
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    color: #333;
+  }
+  
+  .fieldset-desc {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.8rem;
+  }
+  
+  /* OPCIONES DE RADIO */
+  .option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+  }
+  
+  .option input[type="radio"] {
+    margin-right: 0.5rem;
+    accent-color: #007BFF; /* Color del check en navegadores compatibles */
+  }
+  
+  /* CAMBIO DE FONDO AL HOVER */
+  .option:hover {
+    background-color: #f9f9f9;
+    border-radius: 4px;
+  }
+  
+  /* BOTÓN DE ENVÍO */
+  .button-container {
+    text-align: center;
+  }
+  
+  .btn-submit {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background: #0056b3;
+  }
+  
+  /* SECCIÓN DE RESULTADOS */
+  .result-container {
+    margin-top: 2rem;
+    background: #f0f9ff;
+    border-radius: 4px;
+    padding: 1.5rem;
+    border: 1px solid #d0e6f5;
+  }
+  
+  .result-container h2 {
+    margin-bottom: 1rem;
+    color: #007BFF;
+  }
+  
+  #recommendedMethod {
+    font-weight: bold;
+    color: #007BFF;
+  }
+  
+  .explanation {
+    margin-top: 1rem;
+    color: #555;
+  }
+  
+  /* MEDIAS QUERIES PARA RESPONSIVIDAD */
+  @media (max-width: 768px) {
+    .container {
+      margin: 1rem;
+      padding: 1rem;
+    }
+  
+    fieldset {
+      padding: 1rem;
+    }
+  
+    legend {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Encuesta - Método de Definición de Objetivos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Encuesta</h1>
+      <p class="subtitle">¿Qué método de definición de objetivos es ideal para ti?</p>
+    </header>
+
+    <main>
+      <form id="surveyForm">
+        <!-- Sección de instrucciones generales -->
+        <div class="intro">
+          <p>
+            Por favor, responde las siguientes preguntas para conocer
+            el método que mejor se adapta a tus necesidades (SMART, OKR, Balanced Scorecard o Modelo GROW).
+          </p>
+        </div>
+
+        <!-- Pregunta 1 -->
+        <fieldset>
+          <legend>1. Alcance de tus objetivos o proyecto</legend>
+          <p class="fieldset-desc">
+            Selecciona la opción que más describe el enfoque de tus metas.
+          </p>
+          <label class="option">
+            <input type="radio" name="q1" value="smart" required />
+            Metas muy específicas y de corto plazo.
+          </label>
+          <label class="option">
+            <input type="radio" name="q1" value="okr" />
+            Metas ambiciosas con revisiones trimestrales o semestrales.
+          </label>
+          <label class="option">
+            <input type="radio" name="q1" value="bsc" />
+            Metas estratégicas en varias dimensiones (financieras, clientes, procesos, etc.).
+          </label>
+          <label class="option">
+            <input type="radio" name="q1" value="grow" />
+            Objetivos centrados en el desarrollo individual o de un equipo específico.
+          </label>
+        </fieldset>
+
+        <!-- Pregunta 2 -->
+        <fieldset>
+          <legend>2. Cultura de medición y retroalimentación</legend>
+          <p class="fieldset-desc">
+            ¿Con qué frecuencia tu organización revisa y ajusta sus metas?
+          </p>
+          <label class="option">
+            <input type="radio" name="q2" value="smart" required />
+            Preferimos una medición puntual pero no tan constante.
+          </label>
+          <label class="option">
+            <input type="radio" name="q2" value="okr" />
+            Revisamos objetivos y ajustamos cada trimestre con mucha transparencia.
+          </label>
+          <label class="option">
+            <input type="radio" name="q2" value="bsc" />
+            Manejamos una planificación estratégica y revisiones periódicas más formales.
+          </label>
+          <label class="option">
+            <input type="radio" name="q2" value="grow" />
+            Buscamos coaching o mentoría para mejorar nuestro desempeño.
+          </label>
+        </fieldset>
+
+        <!-- Pregunta 3 -->
+        <fieldset>
+          <legend>3. Principal necesidad al definir tus objetivos</legend>
+          <p class="fieldset-desc">
+            ¿Qué es lo más importante que buscas al establecer tus metas?
+          </p>
+          <label class="option">
+            <input type="radio" name="q3" value="smart" required />
+            Claridad y enfoque en resultados específicos y medibles.
+          </label>
+          <label class="option">
+            <input type="radio" name="q3" value="okr" />
+            Metas retadoras y alineación de todo el equipo o la empresa.
+          </label>
+          <label class="option">
+            <input type="radio" name="q3" value="bsc" />
+            Equilibrar la visión financiera con la satisfacción del cliente, procesos y cultura.
+          </label>
+          <label class="option">
+            <input type="radio" name="q3" value="grow" />
+            Autodescubrimiento y coaching para el desarrollo personal o del equipo.
+          </label>
+        </fieldset>
+
+        <!-- Botón para enviar -->
+        <div class="button-container">
+          <button type="submit" class="btn-submit">Siguiente</button>
+        </div>
+      </form>
+
+      <!-- Sección para mostrar el resultado -->
+      <div id="resultContainer" class="result-container" style="display: none;">
+        <h2>¡Encuesta completada!</h2>
+        <p>
+          Tu método recomendado es: <span id="recommendedMethod"></span>
+        </p>
+        <p id="explanation" class="explanation"></p>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
